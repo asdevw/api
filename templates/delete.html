@@ -1,0 +1,12 @@
+
+{% block content %}
+<h2>Delete post...</h2>
+<br/>
+<div class="form-control">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button class="btn btn-secondary">delete post</button>
+    </form>
+</div>
+{% endblock content %}>
